@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#18231c" />
+    <meta name="robots" content="noindex, follow" />
+    <title>404 · Page not found — POKOKOKO</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+      :root { --ink: #18231c; --copper: #a76e42; --cream: #f3efe6; --forest: #1e3024; }
+      * { box-sizing: border-box; margin: 0; }
+      html { height: 100%; }
+      body {
+        height: 100%;
+        font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 32px;
+      }
+      .mark {
+        font-size: 11px;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--copper);
+        margin-bottom: 24px;
+        font-weight: 600;
+      }
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(72px, 16vw, 180px);
+        line-height: .88;
+        font-weight: 500;
+        letter-spacing: -.05em;
+        color: var(--ink);
+      }
+      h1 em {
+        display: block;
+        font-style: italic;
+        color: var(--copper);
+      }
+      p {
+        margin-top: 28px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: #596158;
+        max-width: 400px;
+      }
+      a {
+        margin-top: 42px;
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        min-height: 54px;
+        padding: 0 22px;
+        background: var(--ink);
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: .25s;
+      }
+      a:hover { background: var(--copper); transform: translateY(-2px); }
+      .coffee-mark {
+        position: fixed;
+        bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 9px;
+        letter-spacing: .25em;
+        color: #7b796e;
+      }
+      .coffee-mark svg { width: 44px; fill: none; stroke: var(--copper); stroke-width: 1; }
+      .coffee-mark span { line-height: 1; }
+    </style>
+  </head>
+  <body>
+    <p class="mark">POKOKOKO · Kyoto</p>
+    <h1>404<em>Page not found</em></h1>
+    <p>The page you’re looking for doesn’t exist — or has moved. Either way, let’s get you back on track.</p>
+    <a href="/">Go home<span>↘</span></a>
+    <div class="coffee-mark" aria-hidden="true">
+      <span>POKO</span>
+      <svg viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="56"></circle>
+        <path d="M45 32c15 10 22 42 6 59M75 28c-15 18-20 43-7 65"></path>
+      </svg>
+      <span>KOKO</span>
+    </div>
+  </body>
+</html>
