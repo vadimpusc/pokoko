@@ -1,7 +1,7 @@
 export const site = {
   brand: 'POKOKOKO',
   social: {
-    instagram: 'https://www.instagram.com/',
+    instagram: 'https://www.instagram.com/PokokokoCoffee/',
     maps: 'https://maps.google.com/?q=Kyoto%2C+Japan'
   },
   en: {
