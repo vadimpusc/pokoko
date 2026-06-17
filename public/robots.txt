@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pokokoko.jp/sitemap.xml
+Sitemap: https://pokokoko.com/sitemap.xml

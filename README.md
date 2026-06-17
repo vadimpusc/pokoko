@@ -39,5 +39,5 @@ Before launch, update:
 - Instagram URL and map URL in `src/lib/content.js`
 - Weekly locations and menu items in `src/lib/content.js`
 - Welcome page copy in `src/Welcome.svelte`
-- Production domain in `public/robots.txt`, `public/sitemap.xml`, and canonical URLs if the final domain is not `pokokoko.jp`
+- Production domain in `public/robots.txt`, `public/sitemap.xml`, and canonical URLs if the final domain is not `pokokoko.com`
 - Newsletter form handler with your email platform endpoint
