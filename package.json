@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && vite build --ssr src/App.svelte --outDir .ssr && node scripts/prerender.mjs",
-    "build:landing": "LANDING=true vite build && mv dist/welcome.html dist/index.html",
+    "build:landing": "LANDING=true vite build && cp dist/welcome.html dist/index.html && mkdir -p dist/welcome && cp dist/welcome.html dist/welcome/index.html",
     "deploy": "npm run build && cp CNAME dist/CNAME && gh-pages -d dist --nojekyll",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./jsconfig.json"
