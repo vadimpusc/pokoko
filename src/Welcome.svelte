@@ -3,8 +3,10 @@
 
   let { initialLocale = 'en' } = $props();
   const getInitialLocale = () => /** @type {'en' | 'ja'} */ (initialLocale);
+  /** @type {'en' | 'ja'} */
   let locale = $state(getInitialLocale());
 
+  /** @type {Record<'en' | 'ja', { hero: string[], comingSoon: string, storyTitle: string, story: string }>} */
   const welcome = {
     en: {
       hero: ['Little Things.', 'Crafted Well.'],
@@ -20,7 +22,7 @@
     }
   };
 
-  let copy = $derived(welcome[/** @type {'en' | 'ja'} */ (locale)]);
+  let copy = $derived(welcome[locale]);
   /** @type {'en' | 'ja'} */
   let otherLocale = $derived(locale === 'en' ? 'ja' : 'en');
 
